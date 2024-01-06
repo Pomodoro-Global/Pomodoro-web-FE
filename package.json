@@ -14,6 +14,7 @@
     "@babel/eslint-parser": "7.x",
     "@babel/plugin-syntax-jsx": "7.x",
     "@babel/preset-react": "7.x",
+    "@reduxjs/toolkit": "^2.0.1",
     "eslint-config-airbnb": "18.x",
     "eslint-plugin-import": "2.x",
     "eslint-plugin-jsx-a11y": "6.x",
