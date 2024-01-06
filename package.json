@@ -18,7 +18,8 @@
     "eslint-plugin-import": "2.x",
     "eslint-plugin-jsx-a11y": "6.x",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
