@@ -1,10 +1,9 @@
 function App() {
-
   return (
-    <>
-      Hello world
-    </>
-  )
+    <h1 className="text-4xl">
+      Pomodoro App
+    </h1>
+  );
 }
 
-export default App
+export default App;
