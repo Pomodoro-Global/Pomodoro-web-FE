@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Navbar = () => (
   <section className="border-2 w-2/12 h-screen relative">
     {/* Navbar logo */}
@@ -6,9 +8,18 @@ const Navbar = () => (
     </div>
     {/* Navbar links */}
     <ul className="border-2 h-4/5 px-4 py-4 flex-col border-black">
-      <li className="border-4 p-2 mt-8">Pomodoro app</li>
-      <li className="border-4 p-2 my-2">Log in/up</li>
-      <li className="border-4 p-2 my-2">Setting</li>
+      <li className="border-4 p-2 mt-8">
+        <Link to="/">Pomodoro app</Link>
+      </li>
+      <li className="border-4 p-2 my-2">
+        <Link to="/login">Log in</Link>
+      </li>
+      <li className="border-4 p-2 my-2">
+        <Link to="/logup">Log up</Link>
+      </li>
+      <li className="border-4 p-2 my-2">
+        <Link to="/setting">Setting</Link>
+      </li>
       <li className="border-4 p-2 my-2">Dark/Light mode</li>
       <li className="border-4 p-2 my-2">Log out</li>
     </ul>
