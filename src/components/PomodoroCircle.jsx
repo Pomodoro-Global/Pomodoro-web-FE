@@ -1,5 +1,6 @@
 import Circle from './pomodoro-circle/Circle';
 import ControlButtons from './pomodoro-circle/ControlButtons';
+import SessionCounter from './pomodoro-circle/SessionCounter';
 
 const PomodoroCircle = () => (
   <section>
@@ -8,12 +9,7 @@ const PomodoroCircle = () => (
     {/* Control button  */}
     <ControlButtons />
     {/* Session counter  */}
-    <div className="border-2 flex justify-center items-center">
-      <span>1</span>
-      of
-      <span>4</span>
-      sessions
-    </div>
+    <SessionCounter />
   </section>
 );
 
