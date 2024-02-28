@@ -6,20 +6,18 @@ const Timer = () => {
 
   useEffect(() => {
     // handling seconds
-    // const handleSeconds = () => {
-    //   if (seconds === '00') {
-    //     console.log('inside condition');
-    //     for (let s = 59; s >= 0; s -= 1) {
-    //       setTimeout(setSeconds(s) ,1000);
-    //     }
-    //   }
-    // };
-    // handleSeconds();
     setTimeout(() => {
-      
+      if (seconds === 0) {
+        setSeconds(59);
+      } else {
+        setSeconds(seconds - 1);
+      }
     }, 1000);
     // handling minutes
-  }, []);
+    setTimeout(() => {
+      setMinutes(minutes - 1);
+    }, 1000 * 60);
+  }, [seconds, minutes]);
   return (
     <div className="font-black text-6xl">
       <span>{minutes}</span>
